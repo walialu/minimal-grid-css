@@ -1,0 +1,24 @@
+{
+	"name": "minimal-grid-css",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"serve": "./node_modules/.bin/serve ./dist",
+		"minify": "./node_modules/.bin/node-sass ./src/app.scss ./dist/minimal-grid.min.css --output-style compressed",
+		"watch": "./node_modules/.bin/node-sass --watch ./src/app.scss ./dist/minimal-grid.css",
+		"build": "./node_modules/.bin/node-sass ./src/app.scss ./dist/minimal-grid.css && cp src/app.js src/index.html src/minified.html dist/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@git.superevilmegaco.com:walialu/minimal-grid-css.git"
+	},
+	"author": "Marco Kellershoff <me@walialu.com>",
+	"license": "ISC",
+	"devDependencies": {},
+	"dependencies": {
+		"node-sass": "^4.12.0",
+		"serve": "^11.1.0"
+	}
+}

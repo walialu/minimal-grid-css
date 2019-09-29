@@ -1,0 +1,8 @@
+.git/
+.vendor
+node_modules
+package-lock.json
+yarn.lock
+yarn-error.log
+!.ignore
+!.gitignore
